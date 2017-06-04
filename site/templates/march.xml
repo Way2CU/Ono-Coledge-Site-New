@@ -27,12 +27,12 @@
 			</cms:mobile>
 
 			<!-- Section header-->
-			<section id="header" class="may">
+			<section id="header" class="march">
 				<cms:module
 					name="articles"
 					action="show"
-					text_id="header_may"
-					group="may"
+					text_id="header_main_march"
+					group="march"
 					template="stock/article_generic.xml"
 					>
 					<param name="title_tag" value="h1"/>
@@ -43,7 +43,7 @@
 			</section>
 
 			<!-- Section form and disscount -->
-			<section id="register" class="may">
+			<section id="register" class="march">
 
 				<!-- Constant header and article patch disscount -->
 				<div class="disscount">
@@ -51,8 +51,8 @@
 					<cms:module
 						name="articles"
 						action="show"
-						text_id="disscount_may"
-						group="may"
+						text_id="disscount_march"
+						group="march"
 						template="stock/article_generic.xml"
 						>
 						<param name="title_tag" value="h2"/>
@@ -66,20 +66,20 @@
 				<cms:module
 					name="contact_form"
 					action="show"
-					text_id="contact_may"
+					text_id="contact_march"
 					/>
 				</div>
 			</section>
 
 			<!-- Section features -->
-			<section id="features" class="may">
+			<section id="features" class="march">
 
 				<!-- Top header article of section -->
 				<cms:module
 					name="articles"
 					action="show"
 					text_id="features_header"
-					group="may"
+					group="march"
 					template="stock/article_generic.xml"
 					/>
 
@@ -88,7 +88,7 @@
 					<cms:module
 						name="articles"
 						action="show_list"
-						group="features_may"
+						group="features_march"
 						template="stock/features_generic.xml"
 						>
 						<param name="sprite" value="site_sprite.svg"/>
@@ -101,8 +101,8 @@
 				<cms:module
 					name="articles"
 					action="show"
-					text_id="subjects_may"
-					group="may"
+					text_id="subjects_march"
+					group="march"
 					template="stock/article_generic.xml"
 					>
 					<param name="title_tag" value="h2"/>
@@ -117,7 +117,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="logos_may"
+						group="logos"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="150"/>
@@ -134,7 +134,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="graduates_may"
+						group="graduates_march"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="300"/>
@@ -148,7 +148,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="graduates_may"
+						group="graduates_march"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="150"/>
@@ -168,7 +168,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="tutors_may"
+						group="tutors_march"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="300"/>
@@ -181,7 +181,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="tutors_may"
+						group="tutors_march"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="150"/>
@@ -200,7 +200,7 @@
 					<cms:module
 						name="contact_form"
 						action="show"
-						text_id="contact_may"
+						text_id="contact_march"
 						/>
 					</div>
 				</cms:mobile>
@@ -229,7 +229,7 @@
 					<cms:module
 						name="contact_form"
 						action="show"
-						text_id="contact_may"
+						text_id="contact_march"
 						/>
 					</div>
 				</cms:desktop>
