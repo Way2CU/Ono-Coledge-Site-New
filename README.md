@@ -1,6 +1,6 @@
-# Ono-MBA new version
+# Ono-Colledge new version
 
-New version of Ono-MBA site.
+New version of Ono-Colledge site.
 
 ## License
 
