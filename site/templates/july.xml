@@ -199,7 +199,7 @@
 					<cms:module
 						name="contact_form"
 						action="show"
-						text_id="contact_march"
+						text_id="contact_july"
 						/>
 					</div>
 				</cms:mobile>
@@ -228,7 +228,7 @@
 					<cms:module
 						name="contact_form"
 						action="show"
-						text_id="contact_march"
+						text_id="contact_july"
 						/>
 					</div>
 				</cms:desktop>
