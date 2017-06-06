@@ -48,17 +48,12 @@ section#header.march article p {
 }
 
 @keyframes floating {
-	from {
-		transform: translate(-50%, -20%);
-	}
-
-	to {
-		transform: translate(-50%, 0%);
-	}
+	from { bottom: 3.5em;}
+	to {bottom: 2em;}
 }
 
-section#header.july svg,
-section#header.march svg {
+section#header.july span.arrow,
+section#header.march span.arrow {
 	position: absolute;
 	bottom: 2em;
 	left: 50%;
@@ -66,15 +61,23 @@ section#header.march svg {
 
 	width: 5rem;
 	height: 5rem;
-
 	border-radius: 100%;
 	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+
 
 	animation-name: floating;
 	animation-duration: 2s;
 	animation-direction: alternate;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
+
+
+	svg {
+		display: block;
+		width: 5rem;
+		height: 5rem;
+	}
+
 }
 
 /*

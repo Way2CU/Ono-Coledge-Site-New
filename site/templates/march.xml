@@ -44,7 +44,7 @@
 					<param name="title" value=""/>
 				</cms:module>
 
-				<cms:svg file="site_sprite.svg" symbol="icon-arrow"/>
+				<span class="arrow"><cms:svg file="site_sprite.svg" symbol="icon-arrow"/></span>
 			</section>
 
 			<!-- Section form and disscount -->

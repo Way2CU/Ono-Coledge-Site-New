@@ -23,7 +23,10 @@ header a.logo img {
 }
 
 header a.phone {
-	float: left;
+	position: absolute;
+	left:  calc(~'(50% - 600px)');
+	top: 50%;
+	transform: translateY(-50%);
 	direction: ltr;
 	padding: 1rem 0;
 	text-decoration: none;
