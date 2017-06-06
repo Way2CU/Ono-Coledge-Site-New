@@ -13,7 +13,7 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [x] PNG images are optimized using `optipng` command;
 	- [x] JPEG images are converted from original PNG and optimized using `guetzli` command;
 	- [x] SVG images are cleaned and optimized;
-	- [ ] Site has favicon specified in different sizes (16, 32, 64);
+	- [x] Site has favicon specified in different sizes (16, 32, 64);
 	- [x] All active elements of the site have `:hover` and `:focus` styles defined;
 	- [x] Site has copyright;
 	- [x] `README.md` file updated appropriately with licensing information;
@@ -28,7 +28,7 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [x] Forms have honeypot field;
 	- [x] Templates for each form are created and assigned to form;
 	- [x] Templates have subject properly defined;
-	- [ ] Form submits and client/developer receives email.
+	- [x] Form submits and client/developer receives email.
 - Shop:
 	-> [x] Desired payment method is enabled and configured;
 	-> [x] Default warehouse is created;
