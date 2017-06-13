@@ -51,6 +51,15 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+	/**
+	 * Handle successful form submission.
+	 * @param object response_data
+	 */
+	Site.handle_submission = function(response_data) {
+	    dataLayer.push({event: 'leadsent'});
+	    return true;
+	};
 };
 
 
