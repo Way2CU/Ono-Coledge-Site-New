@@ -51,6 +51,13 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+	// Events
+	for (var i=0, count=Contact.ContactForm.list.length; i<count; i++)
+		Caracal.ContactForm.list[i].events.connect('submit-success', function(data) {
+			dataLayer.push({'event': 'leadSent'});
+			return true;
+		});
 };
 
 
