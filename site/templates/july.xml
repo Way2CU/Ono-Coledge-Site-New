@@ -108,6 +108,7 @@
 					action="show_list"
 					group="july_subjects"
 					template="stock/article_generic.xml"
+					order_by="text_id"
 					>
 					<param name="title_tag" value="h2"/>
 					<param name="title" value=""/>
