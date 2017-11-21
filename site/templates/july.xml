@@ -14,6 +14,7 @@
 		<body>
 			<cms:raw file="gtm.txt"/>
 			<cms:svg file="site_sprite.svg" />
+
 			<!-- Generic header -->
 			<cms:desktop>
 				<cms:template file="stock/header_generic.xml">
@@ -68,11 +69,11 @@
 				<!-- Contact form with constant h2 -->
 				<div class="form_container">
 					<h2><cms:text constant="fill_in"/></h2>
-				<cms:module
-					name="contact_form"
-					action="show"
-					text_id="contact_july"
-					/>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_july"
+						/>
 				</div>
 			</section>
 
@@ -202,11 +203,11 @@
 				<cms:mobile>
 					<div class="form_container">
 						<h2><cms:text constant="fill_in"/></h2>
-					<cms:module
-						name="contact_form"
-						action="show"
-						text_id="contact_july"
-						/>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_july"
+							/>
 					</div>
 				</cms:mobile>
 
@@ -231,11 +232,11 @@
 				<cms:desktop>
 					<div class="form_container">
 						<h2><cms:text constant="fill_in"/></h2>
-					<cms:module
-						name="contact_form"
-						action="show"
-						text_id="contact_july"
-						/>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_july"
+							/>
 					</div>
 				</cms:desktop>
 			</footer>
