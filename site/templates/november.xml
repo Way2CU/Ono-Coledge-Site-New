@@ -52,6 +52,12 @@
 
 				<!-- Constant header and article patch disscount -->
 				<div class="disscount">
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="disscount"
+						template="stock/article_generic.xml"
+						/>
 				</div>
 
 				<!-- Contact form with constant h2 -->
