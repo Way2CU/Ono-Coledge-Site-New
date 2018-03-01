@@ -56,7 +56,7 @@
 						name="articles"
 						action="show"
 						text_id="disscount"
-						template="stock/article_generic.xml"
+						template="parts/article_generic.xml"
 						/>
 				</div>
 
