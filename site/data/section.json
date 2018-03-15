@@ -2,5 +2,6 @@
 	"/": "home.xml",
 	"/march": "july.xml",
 	"/july": "july.xml",
-	"/november": "november.xml"
+	"/november": "november.xml",
+	"/haredim" : "haredim.xml"
 }
