@@ -137,7 +137,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="graduates_march"
+						group="graduates_haredim"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="300"/>
@@ -151,7 +151,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="graduates_march"
+						group="graduates_haredim"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="150"/>
