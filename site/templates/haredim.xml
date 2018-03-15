@@ -113,11 +113,11 @@
 				</div>
 
 				<!-- Logos gallery -->
-				<div class="logos">
-					<h4><cms:text constant="logos_title" /></h4>
+				<!-- <div class="logos">
+					<h4><cms:text constant="logos_title" /></h4> -->
 
 					<!-- Desktop version -->
-					<cms:module
+					<!-- <cms:module
 						name="gallery"
 						action="show_image_list"
 						group="logos"
@@ -125,7 +125,7 @@
 						>
 						<param name="thumbnail_size" value="150"/>
 					</cms:module>
-				</div>
+				</div> -->
 			</section>
 
 			<!-- Section graduates -->
