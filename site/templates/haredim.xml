@@ -91,9 +91,7 @@
 						action="show_list"
 						group="features_haredim"
 						template="stock/features_generic.xml"
-						>
-						<param name="sprite" value="site_sprite.svg"/>
-					</cms:module>
+						/>
 				</ul>
 			</section>
 
