@@ -20,16 +20,19 @@
 				<cms:template file="stock/header_generic.xml">
 					<param name="fixed" value=""/>
 					<param name="menu" value="parts/menu_items.xml"/>
-					<param name="logo" value="logo.svg"/>
+					<param name="logo" value="logo_haredim.png"/>
 					<param name="phone" value="phone_haredim"/>
 					<param name="phone_sprite_icon" value="icon-phone"/>
 					<param name="sprite" value="site_sprite.svg"/>
+					<param name="class" value="heradim"/>
 				</cms:template>
 			</cms:desktop>
 
 			<!-- Generic header Mobile-->
 			<cms:mobile>
-				<cms:template file="parts/header_mobile.xml" />
+				<cms:template file="parts/header_mobile.xml">
+					<param name="haredim"  value=""/>
+				</cms:template>
 			</cms:mobile>
 
 			<!-- Section header-->
