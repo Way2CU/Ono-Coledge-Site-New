@@ -88,14 +88,14 @@
 					/>
 
 				<!-- Features -->
-				<ul>
+				<!-- <ul>
 					<cms:module
 						name="articles"
 						action="show_list"
 						group="features_haredim"
 						template="stock/features_generic.xml"
 						/>
-				</ul>
+				</ul> -->
 			</section>
 
 			<!-- Section subjects -->
