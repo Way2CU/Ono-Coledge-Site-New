@@ -2,7 +2,7 @@
 	<header>
 		<!-- Phone -->
 		<a
-			href="'tel:'.urlencode(Language::get_Text('phone'))"
+			href="'tel:'.urlencode(Language::get_Text('phone_haredim'))"
 			cms:eval="href"
 			class="phone"
 			>
