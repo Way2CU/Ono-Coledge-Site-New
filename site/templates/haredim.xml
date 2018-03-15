@@ -163,11 +163,11 @@
 
 
 			<!-- Section tutors -->
-			<h2 class="tutors"><cms:text constant="tutros"/></h2>
+			<!-- <h2 class="tutors"><cms:text constant="tutros"/></h2> -->
 
-			<section id="tutors">
+			<!-- <section id="tutors"> -->
 				<!-- Desktop version -->
-				<cms:desktop>
+				<!-- <cms:desktop>
 					<cms:module
 						name="gallery"
 						action="show_image_list"
@@ -178,9 +178,9 @@
 						<param name="title" value=""/>
 					</cms:module>
 				</cms:desktop>
-
+ -->
 				<!-- Mobile version -->
-				<cms:mobile>
+				<!-- <cms:mobile>
 					<cms:module
 						name="gallery"
 						action="show_image_list"
@@ -191,7 +191,7 @@
 						<param name="title" value=""/>
 					</cms:module>
 				</cms:mobile>
-			</section>
+			</section> -->
 
 			<!-- Footer -->
 			<footer>
