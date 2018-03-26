@@ -314,13 +314,26 @@ section#features ul li p {
  * Section subjects
 */
 
-section#subjects {
+section#subjects.november {
 	padding: 3em calc(~'(100% - 1200px)' / 2);
 
 	div#articles_container {
 		column-count: 2;
 		column-gap: 1.5rem;
 		text-align: center;
+
+		article {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+}
+
+section#subjects {
+	padding: 3em calc(~'(100% - 1200px)' / 2);
+
+	div#articles_container {
+		display: block;
 	}
 }
 
@@ -334,11 +347,8 @@ section#subjects article {
 
 section#subjects.haifa article,
 section#subjects.haredim article,
-section#subjects.november article,
 section#subjects.july article {
 	width: 800px;
-	display: inline-block;
-	vertical-align: top;
 }
 
 section#subjects article h2 {
