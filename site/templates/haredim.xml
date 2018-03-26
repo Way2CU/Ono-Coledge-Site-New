@@ -54,11 +54,11 @@
 			<!-- Section form and disscount -->
 			<section id="register" class="haredim">
 				<!-- Constant header and article patch disscount -->
-				<div class="disscount">
+				<div class="discount">
 					<cms:module
 						name="articles"
 						action="show"
-						text_id="discount"
+						text_id="discount_haredim"
 						group="haredim"
 						template="parts/article_generic.xml"
 						/>

@@ -51,7 +51,7 @@
 			<section id="register" class="march">
 
 				<!-- Constant header and article patch disscount -->
-				<div class="disscount">
+				<div class="discount">
 					<h2><cms:text constant="assure_your_place"/></h2>
 					<cms:module
 						name="articles"
