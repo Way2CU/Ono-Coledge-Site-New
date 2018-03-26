@@ -58,7 +58,7 @@
 					<cms:module
 						name="articles"
 						action="show"
-						text_id="disscount"
+						text_id="discount"
 						group="haredim"
 						template="parts/article_generic.xml"
 						/>
