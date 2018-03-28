@@ -28,7 +28,7 @@ header.heradim a.logo img {
 
 header a.phone {
 	position: absolute;
-	left:  calc(~'(50% - 600px)');
+	left:  calc(~'(50% - 580px)');
 	top: 50%;
 	transform: translateY(-50%);
 	direction: ltr;
@@ -51,4 +51,22 @@ header a.phone svg {
 	width: 3rem;
 	height: 3rem;
 	padding-right: 0.5rem;
+}
+
+/*
+ * Media Query
+*/
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+	header a.phone {
+		left: calc(~'(50% - 480px)');
+	}
+
+	header a.logo {
+		margin-left: 2rem;
+
+		html[dir=rtl] & {
+			margin-right: 2rem;
+		}
+	}
 }
