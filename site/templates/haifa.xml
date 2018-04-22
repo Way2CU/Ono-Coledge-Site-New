@@ -64,7 +64,12 @@
 
 				<!-- Contact form with constant h2 -->
 				<div class="form_container">
-					<h2><cms:text constant="fill_in"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_haifa"
+						template="parts/form_title.xml"
+						/>
 					<cms:module
 						name="contact_form"
 						action="show"
