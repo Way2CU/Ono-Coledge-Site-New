@@ -52,11 +52,11 @@
 			<section id="register" class="haifa">
 
 				<!-- Constant header and article patch disscount -->
-				<div class="disscount">
+				<div class="discount">
 					<cms:module
 						name="articles"
 						action="show"
-						text_id="disscount"
+						text_id="discount_haifa"
 						group="haifa"
 						template="parts/article_generic.xml"
 						/>

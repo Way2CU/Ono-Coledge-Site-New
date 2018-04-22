@@ -52,11 +52,12 @@
 			<section id="register" class="july">
 
 				<!-- Constant header and article patch disscount -->
-				<div class="disscount">
+				<div class="discount">
 					<cms:module
 						name="articles"
 						action="show"
-						text_id="disscount"
+						text_id="discount_july"
+						group="july"
 						template="parts/article_generic.xml"
 						/>
 				</div>

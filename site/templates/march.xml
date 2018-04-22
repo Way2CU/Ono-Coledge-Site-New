@@ -51,12 +51,12 @@
 			<section id="register" class="march">
 
 				<!-- Constant header and article patch disscount -->
-				<div class="disscount">
+				<div class="discount">
 					<h2><cms:text constant="assure_your_place"/></h2>
 					<cms:module
 						name="articles"
 						action="show"
-						text_id="disscount_march"
+						text_id="discount_march"
 						group="march"
 						template="stock/article_generic.xml"
 						>
