@@ -70,6 +70,13 @@
 						action="show"
 						text_id="contact_haifa"
 						/>
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="form_text"
+						group="haifa"
+						template="parts/article_generic.xml"
+						/>
 				</div>
 			</section>
 
