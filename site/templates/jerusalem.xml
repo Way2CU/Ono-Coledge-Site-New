@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<meta property="og:title" content="site_title" cms:constant="content"/>
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content="http://openday.ono.ac.il" />
+			<meta property="og:image" content="http://openday.ono.ac.il/site/images/facebook.jpg"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:raw file="gtm.txt"/>
+			<cms:svg file="site_sprite.svg" />
+
+			<!-- Generic header -->
+			<cms:desktop>
+				<cms:template file="stock/header_generic.xml">
+					<param name="fixed" value=""/>
+					<param name="menu" value="parts/menu_items.xml"/>
+					<param name="logo" value="logo.svg"/>
+					<param name="phone" value="phone_jerusalem"/>
+					<param name="phone_sprite_icon" value="icon-phone"/>
+					<param name="sprite" value="site_sprite.svg"/>
+				</cms:template>
+			</cms:desktop>
+
+			<!-- Generic header Mobile-->
+			<cms:mobile>
+				<cms:template file="parts/header_mobile.xml" />
+			</cms:mobile>
+
+			<!-- Section header-->
+			<section id="header" class="july">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="header_main_jerusalem"
+					group="jerusalem"
+					template="stock/article_generic.xml"
+					>
+					<param name="title_tag" value="h1"/>
+					<param name="title" value=""/>
+				</cms:module>
+
+				<span class="arrow"><cms:svg file="site_sprite.svg" symbol="icon-arrow"/></span>
+			</section>
+
+			<!-- Section form and disscount -->
+			<section id="register" class="july">
+
+				<!-- Constant header and article patch disscount -->
+				<div class="discount">
+					<cms:module
+						name="articles"
+						action="show"
+						text_id="discount_jerusalem"
+						group="jerusalem"
+						template="parts/article_generic.xml"
+						/>
+				</div>
+
+				<!-- Contact form with constant h2 -->
+				<div class="form_container">
+					<h2><cms:text constant="fill_in"/></h2>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_jerusalem"
+						/>
+				</div>
+			</section>
+
+			<!-- Section features -->
+			<section id="features" class="july">
+
+				<!-- Top header article of section -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="features_header"
+					group="jerusalem"
+					template="stock/article_generic.xml"
+					/>
+
+				<!-- Features -->
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features_jerusalem"
+						template="stock/features_generic.xml"
+						>
+						<param name="sprite" value="site_sprite.svg"/>
+					</cms:module>
+				</ul>
+			</section>
+
+			<!-- Section subjects -->
+			<section id="subjects" class="july">
+				<div id="articles_container">
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="jerusalem_subjects"
+						template="stock/article_generic.xml"
+						order_by="text_id"
+						>
+						<param name="title_tag" value="h2"/>
+						<param name="title" value=""/>
+					</cms:module>
+				</div>
+
+				<!-- Logos gallery -->
+				<div class="logos">
+					<h4><cms:text constant="logos_title" /></h4>
+
+					<!-- Desktop version -->
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="logos"
+						template="parts/gallery_image_template.xml"
+						>
+						<param name="thumbnail_size" value="150"/>
+					</cms:module>
+				</div>
+			</section>
+
+			<!-- Section graduates -->
+			<h2 class="graduates"><cms:text constant="graduates"/></h2>
+
+			<section id="graduates">
+				<!-- Desktop version -->
+				<cms:desktop>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="graduates_jerusalem"
+						template="parts/gallery_image_template.xml"
+						>
+						<param name="thumbnail_size" value="300"/>
+						<param name="description" value=""/>
+						<param name="title" value=""/>
+					</cms:module>
+				</cms:desktop>
+
+				<!-- Mobile version -->
+				<cms:mobile>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="graduates_jerusalem"
+						template="parts/gallery_image_template.xml"
+						>
+						<param name="thumbnail_size" value="150"/>
+						<param name="description" value=""/>
+						<param name="title" value=""/>
+					</cms:module>
+				</cms:mobile>
+			</section>
+
+
+			<!-- Section tutors -->
+			<h2 class="tutors"><cms:text constant="tutros"/></h2>
+
+			<section id="tutors">
+				<!-- Desktop version -->
+				<cms:desktop>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="tutors_jerusalem"
+						template="parts/gallery_image_template.xml"
+						>
+						<param name="thumbnail_size" value="300"/>
+						<param name="title" value=""/>
+					</cms:module>
+				</cms:desktop>
+
+				<!-- Mobile version -->
+				<cms:mobile>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="tutors_jerusalem"
+						template="parts/gallery_image_template.xml"
+						>
+						<param name="thumbnail_size" value="150"/>
+						<param name="title" value=""/>
+					</cms:module>
+				</cms:mobile>
+			</section>
+
+			<!-- Footer -->
+			<footer>
+
+				<!-- Mobile form order of appearance -->
+				<cms:mobile>
+					<div class="form_container">
+						<h2><cms:text constant="fill_in"/></h2>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_jerusalem"
+							/>
+					</div>
+				</cms:mobile>
+
+				<div class="contact">
+					<!-- Logo -->
+					<a href="#top" class="logo">
+						<cms:svg file="logo.svg" />
+					</a>
+
+					<h3><cms:text constant="changing_society" /></h3>
+					<a
+						href="'tel:'.urlencode(Language::get_Text('phone_jerusalem'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:text constant="phone_jerusalem" />
+						<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+					</a>
+				</div>
+
+				<!-- Contact form with constant h2 -->
+				<cms:desktop>
+					<div class="form_container">
+						<h2><cms:text constant="fill_in"/></h2>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_jerusalem"
+							/>
+					</div>
+				</cms:desktop>
+			</footer>
+
+			<!-- Copyright -->
+			<cms:template file="stock/copyright.xml">
+				<param name="holder" value="copyright_holder"/>
+				<param name="text" value="copyright_text"/>
+				<param name="light" value=""/>
+			</cms:template>
+		</body>
+	</html>
+</document>
