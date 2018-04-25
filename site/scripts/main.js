@@ -59,6 +59,11 @@ Site.on_load = function() {
 			dataLayer.push({'event': 'leadSent'});
 			return true;
 		});
+
+	if (window.location.pathname == '/haifa')
+		language_handler.getTextAsync(null, 'haifa_send', function(constant, data) {
+			document.querySelector('#register form button').textContent = data;
+		});
 };
 
 
