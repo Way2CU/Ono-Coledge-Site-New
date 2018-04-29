@@ -241,11 +241,23 @@
 				<!-- Contact form with constant h2 -->
 				<cms:desktop>
 					<div class="form_container">
-						<h2><cms:text constant="fill_in"/></h2>
 						<cms:module
 							name="contact_form"
 							action="show"
 							text_id="contact_haifa"
+							template="parts/form_title.xml"
+							/>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_haifa"
+							/>
+						<cms:module
+							name="articles"
+							action="show"
+							text_id="form_text"
+							group="haifa"
+							template="parts/article_generic.xml"
 							/>
 					</div>
 				</cms:desktop>

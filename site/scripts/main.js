@@ -63,6 +63,13 @@ Site.on_load = function() {
 	if (window.location.pathname == '/haifa')
 		language_handler.getTextAsync(null, 'haifa_send', function(constant, data) {
 			document.querySelector('#register form button').textContent = data;
+			document.querySelector('footer form button').textContent = data;
+		});
+
+	if (window.location.pathname == '/jerusalem')
+		language_handler.getTextAsync(null, 'jerusalem_send', function(constant, data) {
+			document.querySelector('#register form button').textContent = data;
+			document.querySelector('footer form button').textContent = data;
 		});
 };
 
