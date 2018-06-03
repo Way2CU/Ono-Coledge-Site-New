@@ -113,6 +113,8 @@
 					</cms:module>
 				</div>
 
+				<small><cms:text constant="disclaimer_text"/></small>
+
 				<!-- Logos gallery -->
 				<div class="logos">
 					<h4><cms:text constant="logos_title" /></h4>
