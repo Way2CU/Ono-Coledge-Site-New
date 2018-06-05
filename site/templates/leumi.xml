@@ -20,25 +20,25 @@
 				<cms:template file="stock/header_generic.xml">
 					<param name="fixed" value=""/>
 					<param name="menu" value="parts/menu_items.xml"/>
-					<param name="logo" value="logo.svg"/>
-					<param name="phone" value="phone"/>
-					<param name="phone_sprite_icon" value="icon-phone"/>
+					<param name="logo" value="logo_leumi.png"/>
 					<param name="sprite" value="site_sprite.svg"/>
 				</cms:template>
 			</cms:desktop>
 
 			<!-- Generic header Mobile-->
 			<cms:mobile>
-				<cms:template file="parts/header_mobile.xml" />
+				<cms:template file="parts/header_mobile.xml">
+					<param name="leumi" value=""/>
+				</cms:template>
 			</cms:mobile>
 
 			<!-- Section header-->
-			<section id="header" class="july">
+			<section id="header" class="leumi">
 				<cms:module
 					name="articles"
 					action="show"
-					text_id="header_main_july"
-					group="july"
+					text_id="header_main_leumi"
+					group="leumi"
 					template="stock/article_generic.xml"
 					>
 					<param name="title_tag" value="h1"/>
@@ -56,8 +56,8 @@
 					<cms:module
 						name="articles"
 						action="show"
-						text_id="discount_july"
-						group="july"
+						text_id="discount_leumi"
+						group="leumi"
 						template="parts/article_generic.xml"
 						/>
 				</div>
@@ -68,20 +68,20 @@
 					<cms:module
 						name="contact_form"
 						action="show"
-						text_id="contact_july"
+						text_id="contact_leumi"
 						/>
 				</div>
 			</section>
 
 			<!-- Section features -->
-			<section id="features" class="july">
+			<section id="features" class="leumi">
 
 				<!-- Top header article of section -->
 				<cms:module
 					name="articles"
 					action="show"
 					text_id="features_header"
-					group="july"
+					group="leumi"
 					template="stock/article_generic.xml"
 					/>
 
@@ -90,7 +90,7 @@
 					<cms:module
 						name="articles"
 						action="show_list"
-						group="features_july"
+						group="features_leumi"
 						template="stock/features_generic.xml"
 						>
 						<param name="sprite" value="site_sprite.svg"/>
@@ -99,12 +99,12 @@
 			</section>
 
 			<!-- Section subjects -->
-			<section id="subjects" class="july">
+			<section id="subjects" class="leumi">
 				<div id="articles_container">
 					<cms:module
 						name="articles"
 						action="show_list"
-						group="july_subjects"
+						group="leumi_subjects"
 						template="stock/article_generic.xml"
 						order_by="text_id"
 						>
@@ -113,21 +113,6 @@
 					</cms:module>
 
 					<small><cms:text constant="disclaimer_text"/></small>
-				</div>
-
-				<!-- Logos gallery -->
-				<div class="logos">
-					<h4><cms:text constant="logos_title" /></h4>
-
-					<!-- Desktop version -->
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="logos"
-						template="parts/gallery_image_template.xml"
-						>
-						<param name="thumbnail_size" value="150"/>
-					</cms:module>
 				</div>
 			</section>
 
@@ -140,7 +125,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="graduates_march"
+						group="graduates_leumi"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="300"/>
@@ -154,7 +139,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="graduates_march"
+						group="graduates_leumi"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="150"/>
@@ -174,7 +159,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="tutors_march"
+						group="tutors_leumi"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="300"/>
@@ -187,7 +172,7 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						group="tutors_march"
+						group="tutors_leumi"
 						template="parts/gallery_image_template.xml"
 						>
 						<param name="thumbnail_size" value="150"/>
@@ -206,7 +191,7 @@
 						<cms:module
 							name="contact_form"
 							action="show"
-							text_id="contact_july"
+							text_id="contact_leumi"
 							/>
 					</div>
 				</cms:mobile>
@@ -218,14 +203,6 @@
 					</a>
 
 					<h3><cms:text constant="changing_society" /></h3>
-					<a
-						href="'tel:'.urlencode(Language::get_Text('phone'))"
-						cms:eval="href"
-						class="phone"
-						>
-						<cms:text constant="phone" />
-						<cms:svg file="site_sprite.svg" symbol="icon-phone" />
-					</a>
 				</div>
 
 				<!-- Contact form with constant h2 -->
@@ -235,7 +212,7 @@
 						<cms:module
 							name="contact_form"
 							action="show"
-							text_id="contact_july"
+							text_id="contact_leumi"
 							/>
 					</div>
 				</cms:desktop>
