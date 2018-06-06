@@ -117,7 +117,7 @@
 			</section>
 
 			<!-- Section graduates -->
-			<h2 class="graduates"><cms:text constant="graduates"/></h2>
+			<h2 class="graduates"><cms:text constant="graduates_leumi"/></h2>
 
 			<section id="graduates">
 				<!-- Desktop version -->
