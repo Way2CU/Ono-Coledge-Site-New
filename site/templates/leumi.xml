@@ -199,7 +199,12 @@
 				<div class="contact">
 					<!-- Logo -->
 					<a href="#top" class="logo">
-						<cms:svg file="logo.svg" />
+						<img
+							src="_BASEURL.'/site/images/logo_leumi.png'"
+							alt="site_title"
+							cms:eval="src"
+							cms:constant="alt"
+							/>
 					</a>
 
 					<h3><cms:text constant="changing_society" /></h3>
