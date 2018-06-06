@@ -21,6 +21,8 @@
 					<param name="fixed" value=""/>
 					<param name="menu" value="parts/menu_items.xml"/>
 					<param name="logo" value="logo_leumi.png"/>
+					<param name="phone" value="phone_leumi"/>
+					<param name="phone_sprite_icon" value="icon-phone"/>
 					<param name="sprite" value="site_sprite.svg"/>
 				</cms:template>
 			</cms:desktop>
@@ -208,6 +210,14 @@
 					</a>
 
 					<h3><cms:text constant="changing_society" /></h3>
+					<a
+						href="'tel:'.urlencode(Language::get_Text('phone_leumi'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:text constant="phone_leumi" />
+						<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+					</a>
 				</div>
 
 				<!-- Contact form with constant h2 -->

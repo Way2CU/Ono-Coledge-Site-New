@@ -29,7 +29,9 @@
 
 			<!-- Generic header Mobile-->
 			<cms:mobile>
-				<cms:template file="parts/header_mobile.xml" />
+				<cms:template file="parts/header_mobile.xml">
+					<param name="jerusalem" value=""/>
+				</cms:template>
 			</cms:mobile>
 
 			<!-- Section header-->
