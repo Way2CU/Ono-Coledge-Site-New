@@ -52,26 +52,26 @@
 		<a href="#top" class="logo">
 			<cms:if condition="isset($template['haredim'])">
 				<img
-				src="_BASEURL.'/site/images/logo_haredim.png'"
-				alt="site_title"
-				cms:eval="src"
-				/>
+					src="_BASEURL.'/site/images/logo_haredim.png'"
+					alt="site_title"
+					cms:eval="src"
+					/>
 			</cms:if>
 
 			<cms:if condition="isset($template['leumi'])">
 				<img
-				src="_BASEURL.'/site/images/logo_leumi.png'"
-				alt="site_title"
-				cms:eval="src"
-				/>
+					src="_BASEURL.'/site/images/logo_leumi.svg'"
+					alt="site_title"
+					cms:eval="src"
+					/>
 			</cms:if>
 
 			<cms:if condition="!isset($template['haredim']) and !isset($template['leumi'])">
 				<img
-				src="_BASEURL.'/site/images/logo.svg'"
-				alt="site_title"
-				cms:eval="src"
-				/>
+					src="_BASEURL.'/site/images/logo.svg'"
+					alt="site_title"
+					cms:eval="src"
+					/>
 			</cms:if>
 		</a>
 	</header>

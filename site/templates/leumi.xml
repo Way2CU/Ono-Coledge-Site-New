@@ -20,7 +20,7 @@
 				<cms:template file="stock/header_generic.xml">
 					<param name="fixed" value=""/>
 					<param name="menu" value="parts/menu_items.xml"/>
-					<param name="logo" value="logo_leumi.png"/>
+					<param name="logo" value="logo_leumi.svg"/>
 					<param name="phone" value="phone_leumi"/>
 					<param name="phone_sprite_icon" value="icon-phone"/>
 					<param name="sprite" value="site_sprite.svg"/>
@@ -201,12 +201,7 @@
 				<div class="contact">
 					<!-- Logo -->
 					<a href="#top" class="logo">
-						<img
-							src="_BASEURL.'/site/images/logo_leumi.png'"
-							alt="site_title"
-							cms:eval="src"
-							cms:constant="alt"
-							/>
+						<cms:svg file="logo_leumi.svg"/>
 					</a>
 
 					<h3><cms:text constant="changing_society" /></h3>
