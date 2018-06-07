@@ -285,8 +285,16 @@ section#features ul li svg {
 /*
  * Section subjects
  */
-section#subjects small {
-	color: @color_grey;
+section#subjects {
+	padding: 0 1rem;
+
+	small {
+		color: @color_grey;
+	}
+
+	&.leumi small {
+		font-size: 0.8rem;
+	}
 }
 
 section#subjects article {
