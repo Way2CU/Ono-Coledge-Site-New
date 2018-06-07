@@ -1,5 +1,47 @@
 <document>
 	<header>
+
+		<!-- Phone -->
+		<cms:if condition="isset($template['haredim'])">
+			<a
+				href="'tel:'.urlencode(Language::get_Text('phone_haredim'))"
+				cms:eval="href"
+				class="phone"
+				>
+				<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+			</a>
+		</cms:if>
+
+		<cms:if condition="isset($template['jerusalem'])">
+			<a
+				href="'tel:'.urlencode(Language::get_Text('phone_jerusalem'))"
+				cms:eval="href"
+				class="phone"
+				>
+				<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+			</a>
+		</cms:if>
+
+		<cms:if condition="isset($template['leumi'])">
+			<a
+				href="'tel:'.urlencode(Language::get_Text('phone_leumi'))"
+				cms:eval="href"
+				class="phone"
+				>
+				<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+			</a>
+		</cms:if>
+
+		<cms:if condition="!isset($template['haredim']) and !isset($template['jerusalem']) and !isset($template['leumi'])">
+			<a
+				href="'tel:'.urlencode(Language::get_Text('phone'))"
+				cms:eval="href"
+				class="phone"
+				>
+				<cms:svg file="site_sprite.svg" symbol="icon-phone" />
+			</a>
+		</cms:if>
+
 		<!-- form icon-->
 		<a href="#register" class="register">
 			<cms:svg file="site_sprite.svg" symbol="icon-form"/>
