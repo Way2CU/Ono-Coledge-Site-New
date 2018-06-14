@@ -3,8 +3,8 @@
 <document>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
-			<title><cms:text constant="site_title"/></title>
-			<meta property="og:title" content="site_title" cms:constant="content"/>
+			<title><cms:text constant="site_title_leumi"/></title>
+			<meta property="og:title" content="site_title_leumi" cms:constant="content"/>
 			<meta property="og:type" content="website" />
 			<meta property="og:url" content="http://openday.ono.ac.il" />
 			<meta property="og:image" content="http://openday.ono.ac.il/site/images/facebook.jpg"/>
